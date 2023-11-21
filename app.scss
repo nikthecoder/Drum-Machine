@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #242424; /* Updated background color */
+    color: #fff; /* Updated font color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  #drum-machine {
+    background-color: #333; /* Updated background color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.3s; /* Smooth background color transition */
+  }
+  
+  #display {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .drum-pads {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .drum-pad {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    user-select: none; /* Disable text selection on drum pads */
+    font-size: 18px; /* Adjust font size for drum pad keys */
+  }
+  
+  .drum-pad:hover {
+    background-color: #0056b3;
+  }
+  
+  .clip {
+    display: none;
+  }
+  
